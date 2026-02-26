@@ -29,8 +29,8 @@ public class RateLimiterInterceptor implements HandlerInterceptor {
 
             if(count > LIMIT) {
                 response.setStatus(429);
-                response.getWriter().write("Too many requests");
                 response.setContentType("text/plain");
+                response.getWriter().write("Too many requests");
                 return false;
             }
         return true;

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FirstController {
 
-    @GetMapping("/message")
+    @GetMapping("api/message")
     public String message(){
         return "Hello, API is working.";
     }
